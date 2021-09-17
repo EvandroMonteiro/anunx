@@ -13,7 +13,7 @@ import {
 
 import Carousel from 'react-material-ui-carousel'
 
-import TemplateDefault from '../src/Templates/Default'
+import TemplateDefault from '../../src/Templates/Default'
 
 const useStyles = makeStyles((theme) => ({
   box: {
