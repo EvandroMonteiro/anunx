@@ -21,7 +21,7 @@ const users = async (req, res) => {
         password: passwordCrypto
       })
       user.save()
-      res.status(201).json({ sucess: true })
+      res.status(201).json({ success: true })
       break
 
     default:
