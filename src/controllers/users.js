@@ -1,5 +1,5 @@
-import dbConnect from '../../src/utils/dbConnect'
-import { crypto } from '../../src/utils/password'
+import dbConnect from '../utils/dbConnect'
+import { crypto } from '../utils/password'
 import UsersModel from '../models/users'
 
 const get = async (req, res) => {
