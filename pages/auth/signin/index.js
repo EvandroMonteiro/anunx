@@ -1,7 +1,7 @@
 import { Formik } from 'formik'
 import axios from 'axios'
 import { useRouter } from 'next/router'
-import { signIn, session } from 'next-auth/client'
+import { signIn, useSession } from 'next-auth/client'
 
 import {
   Box,
@@ -24,6 +24,7 @@ const SignIn = () => {
   const classes = useStyles()
   const router = useRouter()
   const { setToasty } = useToasty()
+  const [session] = useSession()
 
   console.log(session)
 
@@ -62,6 +63,15 @@ const SignIn = () => {
                 return (
                   <form onSubmit={handleSubmit}>
                     <FormControl fullWidth error={errors.email && touched.email} className={classes.formControl}>
+                      {
+                        router.query.i === '1'
+                          ? (
+                            <Alert severity="error" className={classes.errorMessage}>
+                              Utilizador ou senhas inválidos
+                            </Alert>
+                          )
+                          : null
+                      }
                       <InputLabel>E-mail</InputLabel>
                       <Input
                         name="email"
