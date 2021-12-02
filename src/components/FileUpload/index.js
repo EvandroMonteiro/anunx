@@ -64,7 +64,7 @@ const FileUpload = ({ files, errors, touched, setFieldValue }) => {
               {
                 index === 0 ?
                   <Box className={classes.mainImage}>
-                    <Typography variant="body" color="secondary">
+                    <Typography variant="body1" color="secondary">
                       Principal
                     </Typography>
                   </Box>
