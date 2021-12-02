@@ -41,8 +41,6 @@ export default function ButtonAppBar() {
   const [anchorUserMenu, setAnchorUserMenu] = useState(false)
   const [session] = useSession()
 
-  console.log(session)
-
   const openUserMenu = Boolean(anchorUserMenu)
 
   return (
