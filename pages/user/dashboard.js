@@ -96,12 +96,12 @@ const Home = ({ products }) => {
         </DialogActions>
       </Dialog>
 
-      <Container maxWidth="sm" textAlign="center">
+      <Container maxWidth="sm">
         <Typography component="h1" variant="h2" align="center">
           Meus Anúncios
         </Typography>
 
-        <Link href={'/user/publish'} passHref>
+        <Link href={'/user/publish'} passHref align="center">
           <Button variant="contained" color="primary" className={classes.buttonAdd}>
             Publicar Novo Anúncio
           </Button>
